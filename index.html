@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> Forms </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="shortcut icon" href="./img/smartphone.png">
+    </head>
+
+    <body>
+        <header>
+            <img src="./img/smartphone.png" alt="logo do site" id="logo">
+            <nav> 
+                <ul >
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Modelos</a></li>
+                    <li><a href="#">Galeria</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div>
+                <!-- <img src="./img/central.jpg" id="imgcorpo"> -->
+                <form action="#" method="POST">
+                <p id="p">Faça seu orçamento!</p>
+                <fieldset class="campos">
+                    <legend>Dados Pessoais</legend>
+
+                    <label for="nome">Nome:</label>
+                    <input type="nome" name="nome">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email">
+
+                    <label for="endereco">Endereço:</label>
+                    <input type="endereco" name="endereco">
+
+                    <label for="modelo">Modelo:</label>
+                    <input type="modelo" name="modelo">
+
+                </fieldset>
+
+                <fieldset class="opcoes">
+                    <legend>Selecione o serviço</legend>
+                    <input type="checkbox" name="tela">
+                    <label for="tela">Tela</label>
+
+                    <input type="checkbox" name="bateria">
+                    <label for="bateria">Bateria</label>
+
+                    <input type="checkbox" name="conector_de_carga">
+                    <label for="conector_de_carga">Conector de carga</label>
+
+                    <p></p>
+                    <input type="text" name="outros" id="outros">
+                    <label for="outros">Outros (especifique)</label>
+
+                </fieldset>
+
+                <button type="submit" id="enviar">Enviar</button>
+                <button type="reset" id="cancelar">Cancelar</button>
+            </form>
+            </div>
+        </main>
+
+       
+    </body>
+
+</html>
